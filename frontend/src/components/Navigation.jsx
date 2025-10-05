@@ -54,7 +54,10 @@ const Navigation = () => {
                   key={item.name}
                   href={item.href}
                   className="text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:-translate-y-0.5"
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => {
+                    setIsOpen(false);
+                    trackNavigation(item.name.toLowerCase());
+                  }}
                 >
                   {item.name}
                 </a>
