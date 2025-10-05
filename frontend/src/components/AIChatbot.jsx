@@ -11,7 +11,7 @@ const AIChatbot = () => {
     {
       id: 1,
       type: 'bot',
-      content: chatbotResponses.greeting,
+      content: "Hello! I'm Sharandeep's AI assistant. I can help you learn about his experience, skills, education, projects, or contact information. What would you like to know?",
       timestamp: new Date()
     }
   ]);
