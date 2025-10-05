@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Moon, Sun, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from './ui/button';
+import { trackNavigation, trackThemeToggle, trackSocialClick } from '../utils/analytics';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
