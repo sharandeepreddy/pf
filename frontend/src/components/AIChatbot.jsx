@@ -4,7 +4,6 @@ import { Button } from './ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Input } from './ui/input';
 import { ScrollArea } from './ui/scroll-area';
-import { chatbotResponses } from '../data/mock';
 
 const AIChatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
