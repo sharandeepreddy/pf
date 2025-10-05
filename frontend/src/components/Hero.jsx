@@ -81,7 +81,7 @@ const Hero = () => {
         <div className="space-y-8">
           <div className="animate-fade-in-up">
             <p className="text-lg md:text-xl text-blue-400 font-medium mb-4">
-              👋 Hi, I'm
+              Hi, I'm
             </p>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight">
               {personalInfo.name.split(' ').slice(1).join(' ')}
