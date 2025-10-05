@@ -28,25 +28,7 @@ const AIChatbot = () => {
     scrollToBottom();
   }, [messages]);
 
-  const getBotResponse = (userMessage) => {
-    const message = userMessage.toLowerCase();
-    
-    if (message.includes('experience') || message.includes('work') || message.includes('internship')) {
-      return chatbotResponses.experience;
-    } else if (message.includes('skill') || message.includes('technology') || message.includes('programming')) {
-      return chatbotResponses.skills;
-    } else if (message.includes('education') || message.includes('university') || message.includes('degree')) {
-      return chatbotResponses.education;
-    } else if (message.includes('project') || message.includes('github') || message.includes('work')) {
-      return chatbotResponses.projects;
-    } else if (message.includes('contact') || message.includes('email') || message.includes('phone') || message.includes('reach')) {
-      return chatbotResponses.contact;
-    } else if (message.includes('hello') || message.includes('hi') || message.includes('hey')) {
-      return "Hello! I'm Sharandeep's AI assistant. I can tell you about his experience, skills, education, projects, or contact information. What would you like to know?";
-    } else {
-      return "That's an interesting question! I can help you learn about Sharandeep's experience, skills, education, projects, or contact information. You can also ask me about his internships at AWS and Afame Technologies, or his published research. What specific area would you like to explore?";
-    }
-  };
+  const [sessionId, setSessionId] = useState(null);
 
   const handleSendMessage = async () => {
     if (!inputMessage.trim()) return;
@@ -63,18 +45,61 @@ const AIChatbot = () => {
     setInputMessage('');
     setIsTyping(true);
 
-    // Simulate bot typing delay
-    setTimeout(() => {
+    try {
+      // Call actual AI API
+      const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+      const response = await fetch(`${BACKEND_URL}/api/chat`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          message: inputMessage,
+          session_id: sessionId
+        })
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        
+        // Update session ID if new
+        if (!sessionId) {
+          setSessionId(data.session_id);
+        }
+
+        const botResponse = {
+          id: messages.length + 2,
+          type: 'bot',
+          content: data.reply,
+          timestamp: new Date()
+        };
+        
+        setMessages(prev => [...prev, botResponse]);
+      } else {
+        // Fallback response on API error
+        const botResponse = {
+          id: messages.length + 2,
+          type: 'bot',
+          content: "I apologize, but I'm having trouble connecting to my AI service right now. Please try again in a moment, or feel free to contact Sharandeep directly at sharanreddy.adla@gmail.com.",
+          timestamp: new Date()
+        };
+        
+        setMessages(prev => [...prev, botResponse]);
+      }
+    } catch (error) {
+      console.error('Chatbot API Error:', error);
+      // Fallback response on network error
       const botResponse = {
         id: messages.length + 2,
         type: 'bot',
-        content: getBotResponse(inputMessage),
+        content: "I'm currently experiencing technical difficulties. You can reach Sharandeep directly at sharanreddy.adla@gmail.com or check out his projects on GitHub: https://github.com/sharan-555/",
         timestamp: new Date()
       };
       
       setMessages(prev => [...prev, botResponse]);
+    } finally {
       setIsTyping(false);
-    }, 1000 + Math.random() * 1000); // 1-2 second delay
+    }
   };
 
   const handleKeyPress = (e) => {
