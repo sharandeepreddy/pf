@@ -134,14 +134,16 @@ const Experience = () => {
                 Get In Touch
                 <ArrowRight size={16} />
               </a>
-              <a
-                href="/resume.pdf"
-                download
+              <button
+                onClick={() => {
+                  const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+                  window.open(`${BACKEND_URL}/api/resume/download`, '_blank');
+                }}
                 className="inline-flex items-center justify-center gap-2 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-slate-700 font-semibold px-6 py-3 rounded-lg transition-all duration-300"
               >
                 Download Resume
                 <ArrowRight size={16} />
-              </a>
+              </button>
             </div>
           </div>
         </div>
