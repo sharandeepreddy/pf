@@ -17,8 +17,10 @@ const Navigation = () => {
   }, []);
 
   const toggleTheme = () => {
+    const newTheme = !isDark ? 'dark' : 'light';
     setIsDark(!isDark);
     document.documentElement.classList.toggle('dark');
+    trackThemeToggle(newTheme);
   };
 
   const navItems = [
