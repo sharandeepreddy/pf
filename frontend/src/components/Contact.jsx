@@ -30,26 +30,64 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission (frontend-only for now)
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      toast({
-        title: "Message Sent Successfully! 📧",
-        description: "Thank you for reaching out. I'll get back to you within 24 hours.",
+      // Call actual contact API
+      const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+      const response = await fetch(`${BACKEND_URL}/api/contact`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
       });
-      
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        toast({
+          title: "Message Sent Successfully! 📧",
+          description: data.message || "Thank you for reaching out. I'll get back to you within 24 hours.",
+        });
+        
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
+
+        // Track analytics
+        try {
+          await fetch(`${BACKEND_URL}/api/analytics/track`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              event: 'contact_form_success',
+              data: {
+                subject: formData.subject,
+                message_length: formData.message.length
+              }
+            })
+          });
+        } catch (analyticsError) {
+          console.log('Analytics tracking failed:', analyticsError);
+        }
+        
+      } else {
+        toast({
+          title: "Error Sending Message",
+          description: data.error?.message || "Please try again or contact me directly via email.",
+          variant: "destructive",
+        });
+      }
     } catch (error) {
+      console.error('Contact Form Error:', error);
       toast({
-        title: "Error Sending Message",
-        description: "Please try again or contact me directly via email.",
+        title: "Network Error",
+        description: "Please check your connection or contact me directly at sharanreddy.adla@gmail.com",
         variant: "destructive",
       });
     } finally {
