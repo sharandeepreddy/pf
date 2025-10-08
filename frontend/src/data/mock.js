@@ -8,8 +8,8 @@ export const personalInfo = {
   email: "sharanreddy.adla@gmail.com",
   universityEmail: "sharande@buffalo.edu",
   linkedin: "https://www.linkedin.com/in/sharandeep-reddy",
-  github: "https://github.com/sharan-555/",
-  bio: "Passionate AI/ML Engineer with expertise in deep learning, NLP, and predictive modeling. Currently pursuing Master's in Data Science at University at Buffalo with hands-on experience at AWS and Afame Technologies."
+    github: "https://github.com/sharandeepreddy",
+
 };
 
 export const education = [
