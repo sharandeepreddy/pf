@@ -31,8 +31,8 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      // Call actual contact API
-      const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+      // For Netlify deployment, use relative paths to the functions
+      const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || '';
       const response = await fetch(`${BACKEND_URL}/api/contact`, {
         method: 'POST',
         headers: {
@@ -59,6 +59,7 @@ const Contact = () => {
 
         // Track analytics
         try {
+          const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || '';
           await fetch(`${BACKEND_URL}/api/analytics/track`, {
             method: 'POST',
             headers: {
@@ -315,7 +316,7 @@ const Contact = () => {
                   size="lg"
                   className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white transform hover:scale-105 transition-all duration-300"
                   onClick={() => {
-                    const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+                    const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || '';
                     window.open(`${BACKEND_URL}/api/resume/download`, '_blank');
                   }}
                 >
