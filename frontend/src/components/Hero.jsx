@@ -119,27 +119,7 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Stats */}
-          <div className="animate-fade-in-up grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 max-w-4xl mx-auto" style={{ animationDelay: '0.9s' }}>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">20%</div>
-              <div className="text-sm md:text-base text-gray-400">Model Accuracy Improvement</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">30%</div>
-              <div className="text-sm md:text-base text-gray-400">Inference Speed Optimization</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">98%</div>
-              <div className="text-sm md:text-base text-gray-400">CNN Accuracy Achievement</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">3+</div>
-              <div className="text-sm md:text-base text-gray-400">AI Certifications</div>
-            </div>
-          </div>
-        </div>
-      </div>
+
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
