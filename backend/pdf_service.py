@@ -67,7 +67,7 @@ class PDFService:
         story = []
         
         # Header
-        story.append(Paragraph("Adla Sharandeep Reddy", self.styles['CustomTitle']))
+        story.append(Paragraph("Sharandeep Reddy Adla", self.styles['CustomTitle']))
         story.append(Paragraph(
             "AI/ML Engineer & Data Scientist<br/>" +
             "Buffalo, NY, USA | +1 (716) 750-9326<br/>" +
