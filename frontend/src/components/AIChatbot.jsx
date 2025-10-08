@@ -45,8 +45,8 @@ const AIChatbot = () => {
     setIsTyping(true);
 
     try {
-      // Call actual AI API
-      const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+      // For Netlify deployment, use relative paths to the functions
+      const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || '';
       const response = await fetch(`${BACKEND_URL}/api/chat`, {
         method: 'POST',
         headers: {
@@ -91,7 +91,7 @@ const AIChatbot = () => {
       const botResponse = {
         id: messages.length + 2,
         type: 'bot',
-        content: "I'm currently experiencing technical difficulties. You can reach Sharandeep directly at sharanreddy.adla@gmail.com or check out his projects on GitHub: https://github.com/sharan-555/",
+        content: "I'm currently experiencing technical difficulties. You can reach Sharandeep directly at sharanreddy.adla@gmail.com or check out his LinkedIn profile: https://www.linkedin.com/in/sharanreddyadla",
         timestamp: new Date()
       };
       

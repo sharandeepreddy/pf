@@ -7,8 +7,8 @@ export const personalInfo = {
   phone: "+1 (716) 750-9326",
   email: "sharanreddy.adla@gmail.com",
   universityEmail: "sharande@buffalo.edu",
-  linkedin: "https://www.linkedin.com/in/sharandeep-reddy",
-    github: "https://github.com/sharandeepreddy",
+  linkedin: "https://www.linkedin.com/in/sharanreddyadla",
+    github: "https://www.linkedin.com/in/sharanreddyadla",
 
 };
 
