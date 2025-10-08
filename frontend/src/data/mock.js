@@ -1,7 +1,7 @@
 // Mock data for Sharandeep Reddy's AI Portfolio
 
 export const personalInfo = {
-  name: "Adla Sharandeep Reddy",
+  name: "Sharandeep Reddy Adla",
   title: "AI/ML Engineer & Data Scientist",
   location: "Buffalo, NY, USA",
   phone: "+1 (716) 750-9326",
