@@ -84,9 +84,9 @@ const Hero = () => {
               Hi, I'm
             </p>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight">
-              Sharandeep
+              Sharandeep Reddy
               <span className="block bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-gradient">
-                Reddy
+                Adla
               </span>
             </h1>
           </div>
