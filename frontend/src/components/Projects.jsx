@@ -170,7 +170,7 @@ const Projects = () => {
               className="bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-800 hover:to-black text-white"
               asChild
             >
-              <a href="https://github.com/sharan-555" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/sharandeepreddy" target="_blank" rel="noopener noreferrer">
                 <Github size={20} className="mr-2" />
                 View GitHub Profile
               </a>

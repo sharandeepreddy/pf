@@ -64,7 +64,7 @@ export const projects = [
     title: "Heart Disease Prediction Using ML & XAI",
     description: "Advanced machine learning model for heart disease prediction with explainable AI components. Published at ICOTET 2024 conference.",
     tech: ["Python", "Scikit-learn", "XAI", "Pandas", "Matplotlib"],
-    github: "https://github.com/sharan-555/heart-disease-prediction",
+    github: "https://github.com/sharandeepreddy/heart-disease-prediction",
     demo: "https://heart-disease-ml.netlify.app",
     image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=250&fit=crop",
     status: "Published"
@@ -74,7 +74,7 @@ export const projects = [
     title: "Handwritten Digit & Facial Recognition",
     description: "Comparative study between DNN and CNN architectures. CNN achieved 98% accuracy, outperforming DNN by 12%.",
     tech: ["TensorFlow", "Keras", "OpenCV", "CNN", "DNN"],
-    github: "https://github.com/sharan-555/digit-face-recognition",
+    github: "https://github.com/sharandeepreddy/digit-face-recognition",
     demo: "https://digit-recognition-ai.netlify.app",
     image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop",
     status: "Completed"
@@ -84,7 +84,7 @@ export const projects = [
     title: "SQL-Based Swimmer Club Management",
     description: "Comprehensive class and supply chain management system for swimmer club, managing 500+ members and 100+ inventory items.",
     tech: ["SQL", "DBMS", "Python", "Streamlit", "PostgreSQL"],
-    github: "https://github.com/sharan-555/swimmer-club-management",
+    github: "https://github.com/sharandeepreddy/swimmer-club-management",
     demo: "https://swimmer-management.herokuapp.com",
     image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=250&fit=crop",
     status: "Deployed"
@@ -94,7 +94,7 @@ export const projects = [
     title: "AI-Powered Sentiment Analysis",
     description: "Real-time sentiment analysis tool using transformer models and natural language processing techniques.",
     tech: ["Transformers", "Hugging Face", "NLP", "React", "FastAPI"],
-    github: "https://github.com/sharan-555/sentiment-analysis-ai",
+    github: "https://github.com/sharandeepreddy/sentiment-analysis-ai",
     demo: "https://sentiment-ai-tool.netlify.app",
     image: "https://images.unsplash.com/photo-1516110833967-0b5716ca1387?w=400&h=250&fit=crop",
     status: "In Progress"

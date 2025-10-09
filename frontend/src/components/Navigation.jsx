@@ -68,7 +68,7 @@ const Navigation = () => {
           {/* Social Links & Theme Toggle */}
           <div className="hidden md:flex items-center space-x-4">
             <a
-              href="https://github.com/sharan-555"
+              href="https://github.com/sharandeepreddy"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
@@ -137,7 +137,7 @@ const Navigation = () => {
             ))}
             <div className="flex items-center justify-center space-x-6 pt-4 pb-2">
               <a
-                href="https://github.com/sharan-555"
+                href="https://github.com/sharandeepreddy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
