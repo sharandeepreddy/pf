@@ -2,7 +2,7 @@ import React from 'react';
 import { Briefcase, Calendar, CheckCircle, Building2, ArrowRight } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
-import { experience, certifications } from '../data/mock';
+import { experience } from '../data/mock';
 
 const Experience = () => {
   return (
@@ -81,41 +81,6 @@ const Experience = () => {
           </div>
         </div>
 
-        {/* Certifications Section */}
-        <div>
-          <h3 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
-            Certifications & Credentials
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {certifications.map((cert) => (
-              <Card key={cert.id} className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm border border-white/20 dark:border-slate-700/50 hover:shadow-xl transition-all duration-300 group overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 group-hover:from-blue-500/10 group-hover:to-purple-500/10 transition-all duration-300"></div>
-                <CardHeader className="relative z-10 pb-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <CheckCircle className="w-6 h-6 text-white" />
-                  </div>
-                  <CardTitle className="text-lg font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
-                    {cert.name}
-                  </CardTitle>
-                  <CardDescription className="text-blue-600 dark:text-blue-400 font-semibold">
-                    {cert.issuer}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="relative z-10">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <Calendar className="w-4 h-4 text-gray-500" />
-                      <span className="text-sm text-gray-500 dark:text-gray-400">{cert.date}</span>
-                    </div>
-                    <Badge variant="outline" className="text-xs">
-                      {cert.credential}
-                    </Badge>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
 
         {/* Call to Action */}
         <div className="mt-16 text-center">
