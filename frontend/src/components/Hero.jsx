@@ -92,6 +92,10 @@ const Hero = () => {
           </div>
 
           <div className="animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+            <div className="inline-flex items-center gap-2 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-green-300 dark:border-green-700">
+              <span className="inline-block w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+              🟢 Available for Full-Time Roles | Graduating May 2026
+            </div>
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-light text-gray-300 mb-6">
               {personalInfo.title}
             </h2>
