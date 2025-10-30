@@ -5,13 +5,15 @@ import { Badge } from './ui/badge';
 import { personalInfo, education, skills } from '../data/mock';
 
 const About = () => {
-  const skillCategories = [
-    { name: 'Frontend', skills: skills.frontend, color: 'bg-blue-100 text-blue-800 border-blue-300' },
-    { name: 'Backend', skills: skills.backend, color: 'bg-green-100 text-green-800 border-green-300' },
-    { name: 'AI/ML', skills: skills.aiml, color: 'bg-purple-100 text-purple-800 border-purple-300' },
-    { name: 'Visualization', skills: skills.visualization, color: 'bg-orange-100 text-orange-800 border-orange-300' },
-    { name: 'Deployment', skills: skills.deployment, color: 'bg-gray-100 text-gray-800 border-gray-300' }
-  ];
+  const skillCategories = Object.entries(skills).map(([name, skillList]) => ({
+    name,
+    skills: skillList,
+    color: name === 'ML/AI' ? 'bg-purple-100 text-purple-800 border-purple-300' :
+           name === 'Data Science' ? 'bg-blue-100 text-blue-800 border-blue-300' :
+           name === 'Web Dev' ? 'bg-green-100 text-green-800 border-green-300' :
+           name === 'Cloud/DevOps' ? 'bg-orange-100 text-orange-800 border-orange-300' :
+           'bg-gray-100 text-gray-800 border-gray-300'
+  }));
 
   return (
     <section id="about" className="py-20 bg-white dark:bg-slate-900">
@@ -158,7 +160,56 @@ const About = () => {
         </div>
 
         {/* Fun Facts */}
-        <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-slate-800 dark:to-slate-700 rounded-3xl p-8 md:p-12">
+        <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-slate-800 dark:to-slate-700 rounded-3xl p-8 md:p-12 mb-16">
+          <h3 className="text-2xl md:text-3xl font-bold text-center text-gray-900 dark:text-white mb-8">
+            Key Achievements
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+            <div className="space-y-2">
+              <div className="text-4xl font-bold text-blue-600 dark:text-blue-400">📝</div>
+              <div className="text-lg font-semibold text-gray-900 dark:text-white">Published Researcher</div>
+              <div className="text-sm text-gray-700 dark:text-gray-300">ICOTET 2024</div>
+            </div>
+            <div className="space-y-2">
+              <div className="text-4xl font-bold text-green-600 dark:text-green-400">📈</div>
+              <div className="text-lg font-semibold text-gray-900 dark:text-white">20% Accuracy Boost</div>
+              <div className="text-sm text-gray-700 dark:text-gray-300">ML Model Improvement</div>
+            </div>
+            <div className="space-y-2">
+              <div className="text-4xl font-bold text-purple-600 dark:text-purple-400">🎯</div>
+              <div className="text-lg font-semibold text-gray-900 dark:text-white">98% CNN Accuracy</div>
+              <div className="text-sm text-gray-700 dark:text-gray-300">Deep Learning Project</div>
+            </div>
+            <div className="space-y-2">
+              <div className="text-4xl font-bold text-orange-600 dark:text-orange-400">📊</div>
+              <div className="text-lg font-semibold text-gray-900 dark:text-white">30% Speed Boost</div>
+              <div className="text-sm text-gray-700 dark:text-gray-300">Optimized Inference</div>
+            </div>
+            <div className="space-y-2">
+              <div className="text-4xl font-bold text-yellow-600 dark:text-yellow-400">🏆</div>
+              <div className="text-lg font-semibold text-gray-900 dark:text-white">A+ Grade</div>
+              <div className="text-sm text-gray-700 dark:text-gray-300">Predictive Analytics</div>
+            </div>
+            <div className="space-y-2">
+              <div className="text-4xl font-bold text-pink-600 dark:text-pink-400">☁️</div>
+              <div className="text-lg font-semibold text-gray-900 dark:text-white">AWS Certified</div>
+              <div className="text-sm text-gray-700 dark:text-gray-300">ML & Cloud</div>
+            </div>
+            <div className="space-y-2">
+              <div className="text-4xl font-bold text-indigo-600 dark:text-indigo-400">🎓</div>
+              <div className="text-lg font-semibold text-gray-900 dark:text-white">GPA: 3.704</div>
+              <div className="text-sm text-gray-700 dark:text-gray-300">University at Buffalo</div>
+            </div>
+            <div className="space-y-2">
+              <div className="text-4xl font-bold text-red-600 dark:text-red-400">🟢</div>
+              <div className="text-lg font-semibold text-gray-900 dark:text-white">May 2026</div>
+              <div className="text-sm text-gray-700 dark:text-gray-300">Graduating</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Beyond the Code */}
+        <div className="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-slate-800 dark:to-slate-700 rounded-3xl p-8 md:p-12">
           <h3 className="text-2xl md:text-3xl font-bold text-center text-gray-900 dark:text-white mb-8">
             Beyond the Code
           </h3>
@@ -172,8 +223,8 @@ const About = () => {
               <div className="text-gray-700 dark:text-gray-300">Performance Improvement (CNN vs DNN)</div>
             </div>
             <div className="space-y-2">
-              <div className="text-4xl font-bold text-green-600 dark:text-green-400">2024</div>
-              <div className="text-gray-700 dark:text-gray-300">ICOTET Conference Publication</div>
+              <div className="text-4xl font-bold text-green-600 dark:text-green-400">9</div>
+              <div className="text-gray-700 dark:text-gray-300">Professional Certifications</div>
             </div>
           </div>
         </div>

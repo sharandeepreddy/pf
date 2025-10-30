@@ -7,9 +7,9 @@ export const personalInfo = {
   phone: "+1 (716) 750-9326",
   email: "sharanreddy.adla@gmail.com",
   universityEmail: "sharande@buffalo.edu",
-  linkedin: "https://www.linkedin.com/in/sharanreddyadla",
-    github: "https://www.linkedin.com/in/sharanreddyadla",
-
+  linkedin: "https://www.linkedin.com/in/sharandeep-reddy",
+  github: "https://github.com/sharandeepreddy",
+  bio: "Results-driven AI/ML Engineer with hands-on experience in machine learning models and data science workflows. Demonstrated ability to improve model accuracy by 20% and optimize inference speeds by 30%. Proficient in NLP, predictive modeling, and cloud-based AI deployments with strong focus on model interpretability and business impact."
 };
 
 export const education = [
@@ -18,7 +18,7 @@ export const education = [
     degree: "Master's in Data Science (MPS)",
     institution: "University at Buffalo, NY, USA",
     duration: "Aug 2024 – Present",
-    gpa: "3.704",
+    gpa: "GPA: 3.704",
     status: "current"
   },
   {
@@ -38,10 +38,10 @@ export const experience = [
     company: "Afame Technologies",
     duration: "Jan 2024 – Mar 2024",
     achievements: [
-      "Improved ML model accuracy by 20%",
-      "Optimized inference speed by 30%",
-      "Applied feature engineering and hyperparameter tuning",
-      "Enhanced big data scalability"
+      "Built ML models using Python and Scikit-Learn, improving accuracy by 20%",
+      "Applied hyperparameter tuning, feature engineering, and statistical analysis",
+      "Enhanced AI workflow scalability using big data processing",
+      "Recognized with A+ grade for excellence in predictive analytics"
     ]
   },
   {
@@ -50,10 +50,10 @@ export const experience = [
     company: "Amazon Web Services (AWS)",
     duration: "Dec 2022 – Feb 2023",
     achievements: [
-      "Built and fine-tuned NLP models using Hugging Face",
-      "Integrated OpenAI API for enhanced functionality",
-      "Deployed AI workflows in cloud environment",
-      "Collaborated with cross-functional teams"
+      "Developed ML models for real-world AI applications on AWS cloud",
+      "Fine-tuned NLP models using Hugging Face and OpenAI API",
+      "Integrated AI solutions into business workflows with cross-functional teams",
+      "Optimized model inference speeds by 30%"
     ]
   }
 ];
@@ -62,8 +62,8 @@ export const projects = [
   {
     id: 1,
     title: "Heart Disease Prediction Using ML & XAI",
-    description: "Advanced machine learning model for heart disease prediction with explainable AI components. Published at ICOTET 2024 conference.",
-    tech: ["Python", "Scikit-learn", "XAI", "Pandas", "Matplotlib"],
+    description: "⭐ PUBLISHED at ICOTET 2024 - Developed ECG-based model with Explainable AI techniques (SHAP, LIME) for transparent heart disease prediction.",
+    tech: ["Python", "ML", "XAI", "SHAP", "LIME", "ECG Analysis"],
     github: "https://github.com/sharandeepreddy/heart-disease-prediction",
     demo: "https://heart-disease-ml.netlify.app",
     image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=250&fit=crop",
@@ -72,8 +72,8 @@ export const projects = [
   {
     id: 2,
     title: "Handwritten Digit & Facial Recognition",
-    description: "Comparative study between DNN and CNN architectures. CNN achieved 98% accuracy, outperforming DNN by 12%.",
-    tech: ["TensorFlow", "Keras", "OpenCV", "CNN", "DNN"],
+    description: "CNN achieved 98% accuracy, outperforming DNN by 12%. Comprehensive deep learning comparison study.",
+    tech: ["Deep Learning", "CNN", "DNN", "TensorFlow", "PyTorch"],
     github: "https://github.com/sharandeepreddy/digit-face-recognition",
     demo: "https://digit-recognition-ai.netlify.app",
     image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop",
@@ -81,55 +81,87 @@ export const projects = [
   },
   {
     id: 3,
-    title: "SQL-Based Swimmer Club Management",
-    description: "Comprehensive class and supply chain management system for swimmer club, managing 500+ members and 100+ inventory items.",
-    tech: ["SQL", "DBMS", "Python", "Streamlit", "PostgreSQL"],
+    title: "SQL Database Management for Swimmer Club",
+    description: "Managed 500+ members, 100+ inventory items, 10+ schedules. Comprehensive database design and management system.",
+    tech: ["SQL", "MySQL", "Database Design", "DBMS"],
     github: "https://github.com/sharandeepreddy/swimmer-club-management",
     demo: "https://swimmer-management.herokuapp.com",
     image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=250&fit=crop",
     status: "Deployed"
-  },
-  {
-    id: 4,
-    title: "AI-Powered Sentiment Analysis",
-    description: "Real-time sentiment analysis tool using transformer models and natural language processing techniques.",
-    tech: ["Transformers", "Hugging Face", "NLP", "React", "FastAPI"],
-    github: "https://github.com/sharandeepreddy/sentiment-analysis-ai",
-    demo: "https://sentiment-ai-tool.netlify.app",
-    image: "https://images.unsplash.com/photo-1516110833967-0b5716ca1387?w=400&h=250&fit=crop",
-    status: "In Progress"
   }
 ];
 
 export const skills = {
-  frontend: ["HTML", "CSS", "JavaScript", "React.js", "Streamlit", "Gradio"],
-  backend: ["Python", "SQL", "DBMS", "FastAPI", "Node.js"],
-  aiml: ["Scikit-learn", "Transformers", "NLP", "Predictive Modeling", "XAI", "TensorFlow", "Keras"],
-  visualization: ["Matplotlib", "Seaborn", "Plotly", "D3.js"],
-  deployment: ["GitHub", "Netlify", "PythonAnywhere", "Heroku", "Hugging Face"]
+  "ML/AI": ["Python", "TensorFlow", "PyTorch", "Scikit-learn", "NLP", "Deep Learning", "Computer Vision", "Transformers"],
+  "Data Science": ["Pandas", "NumPy", "SciPy", "Matplotlib", "Seaborn", "Statistical Analysis"],
+  "Web Dev": ["React.js", "JavaScript", "HTML", "CSS", "Flask", "FastAPI", "Streamlit"],
+  "Cloud/DevOps": ["AWS", "Docker", "Git", "GitHub"],
+  "Databases": ["MySQL", "PostgreSQL", "MongoDB", "SQL Server"]
 };
 
 export const certifications = [
   {
     id: 1,
-    name: "Cognizant AI Virtual Experience",
-    issuer: "Cognizant",
-    date: "2023",
-    credential: "CTS-AI-2023"
+    name: "AWS Academy Graduate – ML Foundations",
+    issuer: "Amazon Web Services",
+    date: "Oct 2022",
+    credential: "AWS-ML-2022"
   },
   {
     id: 2,
-    name: "Microsoft AI Skills Challenge",
-    issuer: "Microsoft",
-    date: "2023",
-    credential: "MS-AI-SC-2023"
+    name: "AWS Academy Graduate – Cloud Foundations",
+    issuer: "Amazon Web Services",
+    date: "Apr 2022",
+    credential: "AWS-Cloud-2022"
   },
   {
     id: 3,
+    name: "AI-ML Virtual Internship - AICTE-EduSkills",
+    issuer: "AICTE-EduSkills",
+    date: "Dec 2022 – Feb 2023",
+    credential: "AICTE-AIML-2023"
+  },
+  {
+    id: 4,
+    name: "AI Virtual Experience",
+    issuer: "Cognizant",
+    date: "Sep 2022",
+    credential: "CTS-AI-2022"
+  },
+  {
+    id: 5,
+    name: "Technology Virtual Experience",
+    issuer: "Deloitte",
+    date: "Sep 2022",
+    credential: "Deloitte-Tech-2022"
+  },
+  {
+    id: 6,
+    name: "Microsoft AI Skills Challenge",
+    issuer: "Microsoft",
+    date: "2022",
+    credential: "MS-AI-SC-2022"
+  },
+  {
+    id: 7,
     name: "IBM ML with Python Level 1",
     issuer: "IBM",
     date: "2022",
     credential: "IBM-ML-PY-L1"
+  },
+  {
+    id: 8,
+    name: "Build Your Own Static Website",
+    issuer: "NxtWave",
+    date: "Aug 2022",
+    credential: "NW-Web-2022"
+  },
+  {
+    id: 9,
+    name: "AI Art Mini Project",
+    issuer: "NxtWave",
+    date: "Feb 2023",
+    credential: "NW-AI-2023"
   }
 ];
 
