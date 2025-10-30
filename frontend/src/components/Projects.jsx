@@ -1,5 +1,6 @@
 import React from 'react';
 import { Badge } from './ui/badge';
+import { ExternalLink, FileText } from 'lucide-react';
 import { projects } from '../data/mock';
 
 const Projects = () => {
@@ -37,7 +38,7 @@ const Projects = () => {
                     {project.description}
                   </p>
                   
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {project.tech.map((tech) => (
                       <Badge 
                         key={tech} 
@@ -48,6 +49,21 @@ const Projects = () => {
                       </Badge>
                     ))}
                   </div>
+                  
+                  {project.doi && (
+                    <div className="flex items-center gap-2 mt-3">
+                      <a
+                        href={project.doi}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-sm text-blue-600 dark:text-blue-400 hover:underline"
+                      >
+                        <FileText size={16} />
+                        <span>View Published Paper (DOI)</span>
+                        <ExternalLink size={14} />
+                      </a>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

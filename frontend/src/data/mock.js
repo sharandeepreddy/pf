@@ -9,6 +9,7 @@ export const personalInfo = {
   universityEmail: "sharande@buffalo.edu",
   linkedin: "https://www.linkedin.com/in/sharandeep-reddy",
   github: "https://github.com/sharandeepreddy",
+  orcid: "https://orcid.org/0009-0006-1322-1736",
   bio: "Results-driven AI/ML Engineer with hands-on experience in machine learning models and data science workflows. Demonstrated ability to improve model accuracy by 20% and optimize inference speeds by 30%. Proficient in NLP, predictive modeling, and cloud-based AI deployments with strong focus on model interpretability and business impact."
 };
 
@@ -66,6 +67,7 @@ export const projects = [
     tech: ["Python", "ML", "XAI", "SHAP", "LIME", "ECG Analysis"],
     github: "https://github.com/sharandeepreddy/heart-disease-prediction",
     demo: "https://heart-disease-ml.netlify.app",
+    doi: "https://doi.org/10.1063/12.0036768",
     image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&h=250&fit=crop",
     status: "Published"
   },
