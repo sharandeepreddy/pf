@@ -202,7 +202,7 @@ const About = () => {
             </div>
             <div className="space-y-2">
               <div className="text-4xl font-bold text-red-600 dark:text-red-400">🟢</div>
-              <div className="text-lg font-semibold text-gray-900 dark:text-white">May 2026</div>
+              <div className="text-lg font-semibold text-gray-900 dark:text-white">Dec 2025</div>
               <div className="text-sm text-gray-700 dark:text-gray-300">Graduating</div>
             </div>
           </div>
