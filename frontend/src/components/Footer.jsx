@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail, Heart, Code2, Database, Brain } from 'lucide-react';
+import { Github, Linkedin, Mail, Heart, Code2, Database, Brain, Award } from 'lucide-react';
 import { personalInfo } from '../data/mock';
 
 const Footer = () => {
@@ -17,6 +17,12 @@ const Footer = () => {
       icon: Linkedin,
       url: personalInfo.linkedin,
       color: 'hover:text-blue-400'
+    },
+    {
+      name: 'ORCID',
+      icon: Award,
+      url: personalInfo.orcid,
+      color: 'hover:text-green-400'
     },
     {
       name: 'Email',
