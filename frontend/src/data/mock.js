@@ -66,7 +66,7 @@ export const projects = [
     tech: ["Python", "ML", "XAI", "SHAP", "LIME", "ECG Analysis"],
     github: "https://github.com/sharandeepreddy/heart-disease-prediction",
     demo: "https://heart-disease-ml.netlify.app",
-    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=250&fit=crop",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&h=250&fit=crop",
     status: "Published"
   },
   {
@@ -76,7 +76,7 @@ export const projects = [
     tech: ["Deep Learning", "CNN", "DNN", "TensorFlow", "PyTorch"],
     github: "https://github.com/sharandeepreddy/digit-face-recognition",
     demo: "https://digit-recognition-ai.netlify.app",
-    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=250&fit=crop",
     status: "Completed"
   },
   {
@@ -86,7 +86,7 @@ export const projects = [
     tech: ["SQL", "MySQL", "Database Design", "DBMS"],
     github: "https://github.com/sharandeepreddy/swimmer-club-management",
     demo: "https://swimmer-management.herokuapp.com",
-    image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=250&fit=crop",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop",
     status: "Deployed"
   }
 ];
