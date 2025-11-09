@@ -134,15 +134,6 @@ const Footer = () => {
                   {personalInfo.email}
                 </a>
               </div>
-              <div className="text-gray-400">
-                <p className="text-sm font-medium text-gray-300 mb-1">Phone</p>
-                <a 
-                  href={`tel:${personalInfo.phone}`}
-                  className="hover:text-blue-400 transition-colors duration-300"
-                >
-                  {personalInfo.phone}
-                </a>
-              </div>
             </div>
           </div>
         </div>

@@ -4,7 +4,6 @@ export const personalInfo = {
   name: "Sharandeep Reddy Adla",
   title: "AI/ML Engineer & Data Scientist",
   location: "Buffalo, NY, USA",
-  phone: "+1 (716) 750-9326",
   email: "sharanreddy.adla@gmail.com",
   universityEmail: "sharande@buffalo.edu",
   linkedin: "https://www.linkedin.com/in/sharandeep-reddy",
@@ -197,5 +196,5 @@ export const chatbotResponses = {
   skills: "His expertise spans across Python, Machine Learning, NLP, Deep Learning, and cloud deployment. He's particularly strong in explainable AI and predictive modeling.",
   education: "He's currently pursuing Master's in Data Science at University at Buffalo (GPA: 3.704) and holds a B.Tech in Electronics and Computer Engineering (CGPA: 8.3).",
   projects: "Notable projects include Heart Disease Prediction with XAI (published at ICOTET 2024), CNN vs DNN comparison achieving 98% accuracy, and a comprehensive swimmer club management system.",
-  contact: "You can reach Sharandeep at sharanreddy.adla@gmail.com or +1 (716) 750-9326. He's also active on LinkedIn and GitHub."
+  contact: "You can reach Sharandeep at sharanreddy.adla@gmail.com. He's also active on LinkedIn and GitHub."
 };
