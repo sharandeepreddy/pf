@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './App.css';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
+import Updates from './components/Updates';
 import About from './components/About';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
@@ -21,6 +22,7 @@ function App() {
       <div className="relative min-h-screen bg-white dark:bg-slate-900 transition-colors duration-300">
         <Navigation />
         <Hero />
+        <Updates />
         <About />
         <Projects />
         <Experience />

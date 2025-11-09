@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, MessageCircle, User, FileText } from 'lucide-react';
+import { Mail, MapPin, Send, Github, Linkedin, MessageCircle, User, FileText } from 'lucide-react';
 import { Button } from './ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Input } from './ui/input';
@@ -103,13 +103,6 @@ const Contact = () => {
       value: personalInfo.email,
       href: `mailto:${personalInfo.email}`,
       description: 'Drop me a line anytime'
-    },
-    {
-      icon: Phone,
-      title: 'Phone',
-      value: personalInfo.phone,
-      href: `tel:${personalInfo.phone}`,
-      description: 'Call for immediate response'
     },
     {
       icon: MapPin,
