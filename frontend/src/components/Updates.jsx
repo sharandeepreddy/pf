@@ -1,10 +1,19 @@
 import React from 'react';
-import { Megaphone, Calendar } from 'lucide-react';
+import { Megaphone, Calendar, ExternalLink } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
 
 const Updates = () => {
   const updates = [
+    {
+      id: 3,
+      date: "2024",
+      title: "Research Publication — Heart Disease Prediction Using ML with XAI",
+      description: "Published research paper at ICOTET 2024 in AIP Conference Proceedings on Heart disease prediction using Machine Learning with Explainable AI techniques (SHAP, LIME) for transparent ECG-based diagnosis.",
+      type: "Publication",
+      link: "https://pubs.aip.org/aip/acp/article-abstract/3297/1/060013/3369764/Heart-disease-prediction-using-ML-with-XAI?redirectedFrom=fulltext",
+      badgeColor: "bg-blue-100 text-blue-800 border-blue-300 dark:bg-blue-900/30 dark:text-blue-300 dark:border-blue-700"
+    },
     {
       id: 2,
       date: "November 2025",
@@ -63,6 +72,17 @@ const Updates = () => {
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                   {update.description}
                 </p>
+                {update.link && (
+                  <a
+                    href={update.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 mt-3 text-blue-600 dark:text-blue-400 hover:underline text-sm font-medium"
+                  >
+                    View Publication
+                    <ExternalLink size={14} />
+                  </a>
+                )}
               </CardContent>
             </Card>
           ))}

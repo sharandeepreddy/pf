@@ -66,7 +66,7 @@ export const projects = [
     tech: ["Python", "ML", "XAI", "SHAP", "LIME", "ECG Analysis"],
     github: "https://github.com/sharandeepreddy/heart-disease-prediction",
     demo: "https://heart-disease-ml.netlify.app",
-    doi: "https://doi.org/10.1063/12.0036768",
+    doi: "https://pubs.aip.org/aip/acp/article-abstract/3297/1/060013/3369764/Heart-disease-prediction-using-ML-with-XAI?redirectedFrom=fulltext",
     image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&h=250&fit=crop",
     status: "Published"
   },
