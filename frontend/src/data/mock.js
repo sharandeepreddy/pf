@@ -72,16 +72,43 @@ export const projects = [
   },
   {
     id: 2,
+    title: "AI Multi-Agent System",
+    description: "Production-ready Multi-Agent AI System with LLM orchestration and RAG pipeline. Achieved 95%+ accuracy with 40% token efficiency improvement. Features specialized agents (Planner, Executor, Reviewer) handling 100+ concurrent tasks with <2s response time.",
+    tech: ["LangChain", "OpenAI", "Anthropic Claude", "RAG", "Vector DB", "asyncio", "MLflow"],
+    github: "https://github.com/sharandeepreddy/AI-Multi-Agent-System",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=250&fit=crop",
+    status: "Production Ready"
+  },
+  {
+    id: 3,
+    title: "End-to-End ML Pipeline",
+    description: "Comprehensive Data Science and ML Pipeline automating the entire workflow from data ingestion to deployment. Features automated feature engineering, hyperparameter tuning, and MLflow tracking. Achieved 94.2% accuracy with 0.97 ROC-AUC on classification tasks.",
+    tech: ["Python", "scikit-learn", "XGBoost", "FastAPI", "Docker", "MLflow", "Evidently AI"],
+    github: "https://github.com/sharandeepreddy/Data-Science-ML-Pipeline",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop",
+    status: "Production Ready"
+  },
+  {
+    id: 4,
     title: "Handwritten Digit & Facial Recognition",
     description: "CNN achieved 98% accuracy, outperforming DNN by 12%. Comprehensive deep learning comparison study.",
     tech: ["Deep Learning", "CNN", "DNN", "TensorFlow", "PyTorch"],
     github: "https://github.com/sharandeepreddy/digit-face-recognition",
     demo: "https://digit-recognition-ai.netlify.app",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=250&fit=crop",
+    image: "https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=400&h=250&fit=crop",
     status: "Completed"
   },
   {
-    id: 3,
+    id: 5,
+    title: "AI Chatbot Web Application",
+    description: "Interactive AI-powered chatbot with modern gradient design and responsive layout. Built for fast deployment on Netlify with a lightweight, accessible interface.",
+    tech: ["HTML5", "CSS3", "JavaScript", "Netlify"],
+    github: "https://github.com/sharandeepreddy/ai-chatbot-app",
+    image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=400&h=250&fit=crop",
+    status: "Deployed"
+  },
+  {
+    id: 6,
     title: "SQL Database Management for Swimmer Club",
     description: "Managed 500+ members, 100+ inventory items, 10+ schedules. Comprehensive database design and management system.",
     tech: ["SQL", "MySQL", "Database Design", "DBMS"],
