@@ -3,6 +3,7 @@ import { Briefcase, Calendar, CheckCircle, Building2, ArrowRight } from 'lucide-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
 import { experience, certifications } from '../data/mock';
+import ResumeDialog from './ResumeDialog';
 
 const Experience = () => {
   return (
@@ -134,16 +135,12 @@ const Experience = () => {
                 Get In Touch
                 <ArrowRight size={16} />
               </a>
-              <button
-                onClick={() => {
-                  const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-                  window.open(`${BACKEND_URL}/api/resume/download`, '_blank');
-                }}
-                className="inline-flex items-center justify-center gap-2 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-slate-700 font-semibold px-6 py-3 rounded-lg transition-all duration-300"
-              >
-                Download Resume
-                <ArrowRight size={16} />
-              </button>
+              <ResumeDialog>
+                <button className="inline-flex items-center justify-center gap-2 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-slate-700 font-semibold px-6 py-3 rounded-lg transition-all duration-300">
+                  View Resume
+                  <ArrowRight size={16} />
+                </button>
+              </ResumeDialog>
             </div>
           </div>
         </div>
