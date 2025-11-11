@@ -47,11 +47,10 @@ export default async (req, context) => {
       VALUES (${ipAddress}, ${userAgent}, ${referrer})
     `;
 
-    // For now, redirect to a placeholder or provide a message
-    // In a real implementation, you would serve the actual resume file
     return new Response(
       JSON.stringify({
-        message: "Resume download functionality will be implemented soon. Please contact Sharandeep directly for his resume at sharanreddy.adla@gmail.com"
+        success: true,
+        resumeUrl: "/Resume.pdf"
       }), 
       { 
         status: 200, 
